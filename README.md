@@ -14,7 +14,7 @@ I am a BSCS student passionate about software development, currently learning Ja
 
 ## 🌍 Live Website
 
-(Will be available soon)
+https://roohulamin.github.io
 
 ## 📫 Contact
 
