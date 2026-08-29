@@ -2,56 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact | Roohulamin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Roohul Amin - BSCS student and developer available for internships and projects.">
+    <meta name="keywords" content="Roohul Amin, contact, hire, developer, internship, web development">
+    <meta name="author" content="Roohul Amin">
+    <meta property="og:title" content="Contact | Roohul Amin">
+    <meta property="og:description" content="Get in touch with Roohul Amin for projects, internships, or collaboration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roohulamin.vercel.app/contact.html">
+    <title>Contact | Roohul Amin</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <header>
-        <div class="logo">ROOHULAMIN</div>
-        <nav>
+        <div class="logo">ROOHUL<span>AMIN</span></div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="assets/docs/Roohulamin_CV.pdf" class="cv-btn" download><i class="fas fa-download"></i> Download CV</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="assets/docs/Roohulamin_CV.pdf" class="cv-btn" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
         </nav>
     </header>
 
-    <main class="container fade-in">
+    <main id="main" class="container fade-in">
+        <div class="section-title">
+            <h2>Let's Start a Conversation</h2>
+                <p class="section-subtitle">I am always looking for collaborative projects or opportunities to solve unique problems.</p>
+        </div>
+
         <div class="contact-wrapper">
-            <div class="contact-info">
-                <h2>Let’s Start a Conversation</h2>
-                <p>I am always looking for collaborative projects or opportunities to solve unique problems.</p>
+            <div class="contact-info slide-up">
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
-                    <span>rohulameen1544@gmail.com</span>
+                    <span>roohulamin.dev@gmail.com</span>
                 </div>
                 <div class="info-item">
                     <i class="fab fa-whatsapp"></i>
                     <span>+92 309 8711038</span>
                 </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nowshera, Khyber Pakhtunkhwa, Pakistan</span>
+                </div>
                 <div class="social-links">
-                    <a href="https://github.com/RoohulAmin-dev" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/Roohul-Amin-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://web.facebook.com/people/Řohullah-Üłfãť/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://web.facebook.com/people/Řohullah-Üłfãť/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    
+                    <a href="https://github.com/RoohulAmin-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/Roohul-Amin-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://web.facebook.com/people/Rohullah-Ulfat/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/923098711038" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form slide-up" action="https://formspree.io/f/your-form-id" method="POST">
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="e.g. John Doe" required>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="email@example.com" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="How can I help you?" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
             </form>
@@ -59,28 +81,30 @@
     </main>
 
     <footer>
-    <div class="footer-grid">
-        <div class="footer-nav">
-            <h3>Navigation</h3><br>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br>
-            <p>© 2026 Roohulamin | BSCS Northern University</p>
-            <p style="font-size: 0.8rem; opacity: 0.6;">Nowshera, Khyber Pakhtunkhwa, Pakistan</p>
+        <div class="footer-grid">
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <h3>My Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.123456789!2d71.9700!3d33.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38eb931957774ad7%3A0x23d94f29102a06de!2sNorthern%20University!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-        <div class="map-container">
-            <h3>Our Location</h3><br>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.123456789!2d71.9700!3d33.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38eb931957774ad7%3A0x23d94f29102a06de!2sNorthern%20University!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" 
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Roohul Amin | BSCS Northern University Nowshera</p>
+            <p class="footer-text-muted">Nowshera, Khyber Pakhtunkhwa, Pakistan</p>
         </div>
-    </div>
-</footer>
+    </footer>
 
-    </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

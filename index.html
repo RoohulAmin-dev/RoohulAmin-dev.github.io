@@ -2,98 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Roohulamin | Portfolio</title>
-    <link rel="stylesheet" href="\assets\css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roohul Amin - BSCS Student, Developer & Innovator. Portfolio showcasing projects in AI, web development, and software engineering.">
+    <meta name="keywords" content="Roohul Amin, portfolio, developer, BSCS, Python, Flask, AI, web development, Northern University">
+    <meta name="author" content="Roohul Amin">
+    <meta property="og:title" content="Roohul Amin | Portfolio">
+    <meta property="og:description" content="BSCS Student, Developer & Innovator from Northern University Nowshera">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roohulamin.vercel.app/">
+    <title>Roohul Amin | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Roohul Amin",
+        "url": "https://roohulamin.vercel.app/",
+        "jobTitle": "Computer Science Student",
+        "worksFor": { "@type": "EducationalOrganization", "name": "Northern University Nowshera" }
+    }
+    </script>
 </head>
 <body>
-   <header>
-    <div class="logo">ROOHULAMIN</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="assets/docs/Roohulamin_CV.pdf" class="cv-btn" download>
-            <i class="fas fa-download"></i> Download CV
-        </a>
-    </nav>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header>
+        <div class="logo">ROOHUL<span>AMIN</span></div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/docs/Roohulamin_CV.pdf" class="cv-btn" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </nav>
     </header>
 
-    <main class="container fade-in">
-        <section class="hero">
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="images/me_hero.jpg" class="hero-img">
-            <p>Roohulamin - Project Lead</p>
-        </div>
-        <div class="mySlides fade" style="margin-top: 10px;">
-            <img src="images/team1.jpg" class="hero-img">
-            <p>Our Development Team</p>
-        </div>
-        <div class="mySlides fade">
-            <img src="images/team2.jpg" class="hero-img">
-            <p>Collaborative Innovation</p>
-        </div>
-    </div>
+    <main id="main" class="container">
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Open to Internships & Projects
+            </div>
 
-    <h1 style="font-size: 3.5rem; margin-top: 20px;">Empowering Humanity Through Innovation.</h1>
-    <p>Consistency is the bridge between goals and accomplishment.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/me_hero.jpg" class="hero-img" alt="Roohul Amin - Profile Photo">
+                    <p class="slide-caption">Roohul Amin</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/team1.jpg" class="hero-img" alt="Development Team">
+                    <p class="slide-caption">Team Collaboration</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/team2.jpg" class="hero-img" alt="Innovation Workshop">
+                    <p class="slide-caption">Innovation in Action</p>
+                </div>
+            </div>
+
+            <h1>Empowering Humanity Through Innovation</h1>
+            <p>Consistency is the bridge between goals and accomplishment. I build intelligent systems that solve real-world problems.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn">View My Work</a>
+                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+            </div>
         </section>
-<div class="stats-bar">
-    <div class="stat-item">
-        <span class="stat-number">4.0</span>
-        <span class="stat-label">Current GPA</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">3+</span>
-        <span class="stat-label">Academic Awards</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Projects Completed</span>
-    </div>
-</div>
 
-<script>
-    let slideIndex = 0;
-    showSlides();
+        <!-- Stats Bar -->
+            <div class="stats-bar slide-up">
+            <div class="stat-item">
+                <span class="stat-number">3.97</span>
+                <span class="stat-label">Current GPA</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Academic Awards</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+        </div>
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 6000); // Changes image every 4 seconds
-    }
-</script>
+        <!-- Featured Projects -->
+        <section class="slide-up">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">A selection of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project.jpg" alt="Gamification with AI">
+                    <div class="project-info">
+                        <h4>Gamification with AI</h4>
+                        <p>An AI-driven adaptive learning platform that decides how to teach a topic — flashcards, quiz, timeline, diagram, visualization, or simulation.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>OpenRouter</span>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RoohulAmin-dev/gamification-with-AI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://gamification-with-ai-by-roohulamin.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/team1.jpg" alt="Premium Developer Portfolio">
+                    <div class="project-info">
+                        <h4>Premium Developer Portfolio</h4>
+                        <p>A high-end personal portfolio built with React.js, featuring a custom matte-black and gold aesthetic, particle-canvas animations, and full responsiveness.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>CSS3</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RoohulAmin-dev/roohulamin" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://roohulamin.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project.jpg" alt="Handwriting Recognition System">
+                    <div class="project-info">
+                        <h4>Handwriting Recognition System</h4>
+                        <p>AI-powered tool that converts handwritten text to digital format using OCR and computer vision.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Tesseract OCR</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RoohulAmin-dev" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section slide-up">
+            <div class="section-title">
+                <h2>My Technical Ecosystem</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-code"></i> Languages</h4>
+                    <p>Python, C++, Java, JavaScript (ES6+)</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-layer-group"></i> Frameworks & Tools</h4>
+                    <p>Flask, OpenCV, Tesseract OCR, Git/GitHub</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Tesseract</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Database</h4>
+                    <p>MySQL, SQL Server, Database Normalization</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">ERD Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section class="slide-up">
+            <div class="section-title">
+                <h2>Experience & Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h4>BSCS - Northern University Nowshera</h4>
+                        <p>Third semester student focusing on software engineering, AI, and database systems. Maintaining 4.0 GPA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h4>Operations Manager - Retail Shop, Nowshera</h4>
+                        <p>Managing daily operations, inventory, and customer service. Developed strong problem-solving and time-management skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h4>1st Place - Northern Web Society Portal Competition</h4>
+                        <p>Built and deployed a full-stack web portal for the university society in a competitive coding event.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-<footer>
-    <div class="footer-grid">
-        <div class="footer-nav">
-            <h3>Navigation</h3><br>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br>
-            <p>© 2026 Roohulamin | BSCS Northern University</p>
-            <p style="font-size: 0.8rem; opacity: 0.6;">Nowshera, Khyber Pakhtunkhwa, Pakistan</p>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <h3>My Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.123456789!2d71.9700!3d33.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38eb931957774ad7%3A0x23d94f29102a06de!2sNorthern%20University!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-        <div class="map-container">
-            <h3>Our Location</h3><br>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.123456789!2d71.9700!3d33.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38eb931957774ad7%3A0x23d94f29102a06de!2sNorthern%20University!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" 
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Roohul Amin | BSCS Northern University Nowshera</p>
+            <p class="footer-text-muted">Nowshera, Khyber Pakhtunkhwa, Pakistan</p>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
